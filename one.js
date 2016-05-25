@@ -1,9 +1,21 @@
 
 var title = "Ace JavaScript Interviews",
+    subtitle = "Scoping and Hoisting",
     author = "Fox Reymann"
 
 
 
+
+
+var x = 1;
+
+function fun() {
+  if (!x) {
+    var x = 10;
+  }
+  console.log(x);
+}
+fun();
 
 
 
@@ -18,6 +30,9 @@ var scope = {
 
 
 
+var a;
+
+expectScopeOf(a).toBe('?');
 
 
 
@@ -26,11 +41,26 @@ var scope = {
 
 
 
+expectScopeOf(a).toBe('global scope');
+
+
+
+function fun2 () {
+  if(true) {
+
+  }
+}
 
 
 
 
 
 
+// hacks
 
+function expectScopeOf () {
+  var toReturn = {}
+  toReturn.toBe = function() {}
 
+  return toReturn;
+}
