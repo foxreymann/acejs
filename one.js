@@ -92,6 +92,19 @@ expectScopeOf(c).toBe('block scope');
 
 
 
+
+
+function fd () {
+  console.log(d);
+}
+fd();
+
+
+
+
+
+
+
 // hacks
 var b,c;
 
