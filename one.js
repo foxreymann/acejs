@@ -113,7 +113,11 @@ var hoisting = {
 
 
 
-// function hoisting
+//hoisted();
+
+function hoisted() {
+  console.log("foo");
+}
 
 
 
