@@ -93,6 +93,7 @@ expectScopeOf(c).toBe('block scope');
 
 
 // hacks
+var b,c;
 
 function expectScopeOf () {
   var toReturn = {}
@@ -101,6 +102,5 @@ function expectScopeOf () {
   return toReturn;
 }
 
-var b;
 
 // ReferenceError: c is not defined
