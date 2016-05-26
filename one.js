@@ -93,14 +93,27 @@ expectScopeOf(c).toBe('block scope');
 
 
 
-
 function fd () {
-  console.log(d);
+  // console.log(d);
+  // var d = 10;
 }
 fd();
 
 
 
+
+
+
+
+
+var hoisting = {
+  definition: "moving declarations to the top of current scope"
+}
+
+
+
+
+// function hoisting
 
 
 
