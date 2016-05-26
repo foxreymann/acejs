@@ -97,7 +97,7 @@ expectScopeOf(c).toBe('block scope');
 
 
 
-
+'use strict'
 
 function fd () {
   // console.log(d);
@@ -124,6 +124,11 @@ var hoisting = {
 function hoisted() {
   console.log("foo");
 }
+
+
+
+
+
 
 
 
