@@ -9,13 +9,13 @@ var title = "Ace JavaScript Interviews",
 
 var x = 1;
 
-function fun() {
+function fx() {
   if (!x) {
     var x = 10;
   }
   console.log(x);
 }
-fun();
+fx();
 
 
 
@@ -45,11 +45,47 @@ expectScopeOf(a).toBe('global scope');
 
 
 
-function fun2 () {
-  if(true) {
 
+
+
+function fb () {
+  if(true) {
+    var b;
   }
 }
+
+expectScopeOf(b).toBe('?');
+
+
+
+
+
+
+
+
+expectScopeOf(b).toBe('function scope');
+
+
+
+
+
+
+function fc () {
+  if(true) {
+    let c;
+  }
+}
+
+expectScopeOf(c).toBe('?');
+
+
+
+
+
+
+
+
+expectScopeOf(c).toBe('block scope');
 
 
 
@@ -64,3 +100,7 @@ function expectScopeOf () {
 
   return toReturn;
 }
+
+var b;
+
+// ReferenceError: c is not defined
