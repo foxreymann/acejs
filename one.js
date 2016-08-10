@@ -1,7 +1,8 @@
 
 var title = "Ace JavaScript Interviews",
     subtitle = "Scoping and Hoisting",
-    author = "Fox Reymann"
+    author = "Fox Reymann",
+    profession = "Node.js developer"
 
 
 
