@@ -87,6 +87,7 @@ expectScopeOf(b).toBe('function scope');
 function fc () {
   if(true) {
     let c;
+    const C = "value";
   }
 }
 
