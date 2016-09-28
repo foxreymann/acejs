@@ -1,0 +1,1 @@
+Back to basics of JavaScript. Informative, interesting and entertaining talk. Great knowledge refreshment for those who know JavaScript. Essential education for those who never learned JavaScript properly.
