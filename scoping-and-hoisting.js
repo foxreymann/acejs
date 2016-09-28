@@ -127,16 +127,18 @@ var hoisting = {
 
 
 
-//hoisted();
+//fe();
 
-function hoisted() {
-  console.log("foo");
+function fe() {
+  console.log("cheese");
 }
 
 
+//ff();
 
-
-
+var ff = function() {
+  console.log("sausages");
+}
 
 
 
