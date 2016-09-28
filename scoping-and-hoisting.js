@@ -147,10 +147,9 @@ var ff = function() {
 var b,c;
 
 function expectScopeOf () {
-  var toReturn = {}
-  toReturn.toBe = function() {}
-
-  return toReturn;
+  return {
+    toBe: function() {}
+  }
 }
 
 
