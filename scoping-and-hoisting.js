@@ -27,9 +27,26 @@ function fx() {
   if (!x) {
     var x = 10;
   }
-  // console.log(x);
+  //  console.log(x);
 }
 fx();
+
+
+
+
+
+
+
+
+let y = 1;
+
+function lety() {
+  if (!y) {
+    let y = 10;
+  }
+//  console.log(y);
+}
+lety();
 
 
 
